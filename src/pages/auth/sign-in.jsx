@@ -14,7 +14,7 @@ const SignIn = ({
   heading = "Sign In to Wonderfull Inn",
   logo = {
     url: "/",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+    src: "/tree-palm.svg",
     alt: "Wonderfull Inn",
     title: "Wonderfull Inn",
   },

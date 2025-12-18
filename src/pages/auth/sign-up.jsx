@@ -20,7 +20,7 @@ const SignUp = ({
   heading = "Create Your Account",
   logo = {
     url: "/",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+    src: "/tree-palm.svg",
     alt: "Wonderfull Inn",
     title: "Wonderfull Inn",
   },
