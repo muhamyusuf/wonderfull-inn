@@ -2,7 +2,6 @@ import { CheckCircle2, XCircle, AlertCircle, Clock, FileCheck, Upload } from "lu
 
 /**
  * Status configurations for bookings
- * Centralized status logic to avoid repetition across components
  */
 export const BOOKING_STATUS = {
   pending: {
@@ -43,67 +42,8 @@ export const BOOKING_STATUS = {
 };
 
 /**
- * Get status icon component
- * @param {string} status - Booking status
- * @returns {React.ComponentType} Icon component
- */
-export const getStatusIcon = (status) => {
-  const config = BOOKING_STATUS[status] || BOOKING_STATUS.pending;
-  return config.icon;
-};
-
-/**
- * Get status color classes
- * @param {string} status - Booking status
- * @returns {string} Tailwind color classes
- */
-export const getStatusColor = (status) => {
-  const config = BOOKING_STATUS[status] || BOOKING_STATUS.pending;
-  return config.color;
-};
-
-/**
- * Get status label
- * @param {string} status - Booking status
- * @returns {string} Human-readable label
- */
-export const getStatusLabel = (status) => {
-  const config = BOOKING_STATUS[status] || BOOKING_STATUS.pending;
-  return config.label;
-};
-
-/**
  * Get full status config
- * @param {string} status - Booking status
- * @returns {object} Full status configuration
  */
 export const getStatusConfig = (status) => {
   return BOOKING_STATUS[status] || BOOKING_STATUS.pending;
-};
-
-/**
- * Check if booking can be cancelled
- * @param {string} status - Booking status
- * @returns {boolean}
- */
-export const canCancelBooking = (status) => {
-  return ["pending", "payment_pending"].includes(status);
-};
-
-/**
- * Check if booking can be reviewed
- * @param {string} status - Booking status
- * @returns {boolean}
- */
-export const canReviewBooking = (status) => {
-  return status === "completed";
-};
-
-/**
- * Check if payment can be uploaded
- * @param {string} status - Booking status
- * @returns {boolean}
- */
-export const canUploadPayment = (status) => {
-  return ["pending", "payment_pending"].includes(status);
 };
