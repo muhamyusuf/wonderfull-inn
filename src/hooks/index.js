@@ -1,9 +1,14 @@
+// Core/Generic Hooks
+export { useFetch, useFetchById } from "./use-fetch";
+export { useMutation, useMutations } from "./use-mutation";
+
 // Utility Hooks
 export { useAsync } from "./use-async";
 export { useDebounce } from "./use-debounce";
 export { useIsMobile } from "./use-mobile";
 export { useSeo } from "./use-seo";
 export { useUrlParams } from "./use-url-params";
+export { useAuthGuard } from "./use-auth-guard";
 export { useFormValidation } from "./use-form-validation";
 export { useFileArray } from "./use-file-array";
 export { useImageArray } from "./use-image-array";

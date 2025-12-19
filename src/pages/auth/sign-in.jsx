@@ -14,7 +14,7 @@ const SignIn = ({
   heading = "Sign In to Wonderfull Inn",
   logo = {
     url: "/",
-    src: "/tree-palm.svg",
+    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
     alt: "Wonderfull Inn",
     title: "Wonderfull Inn",
   },
@@ -146,22 +146,6 @@ const SignIn = ({
                 buttonText
               )}
             </Button>
-
-            <div className="mt-4 text-xs text-muted-foreground">
-              <p className="font-semibold mb-2">Demo Accounts:</p>
-              <div className="grid gap-2">
-                <div className="p-2 bg-muted/50 rounded border">
-                  <p className="font-medium text-foreground">Tourist</p>
-                  <p>Email: tourist@wonderfullinn.web.id</p>
-                  <p>Password: password</p>
-                </div>
-                <div className="p-2 bg-muted/50 rounded border">
-                  <p className="font-medium text-foreground">Agent</p>
-                  <p>Email: agent@wonderfullinn.web.id</p>
-                  <p>Password: password</p>
-                </div>
-              </div>
-            </div>
           </form>
           <div className="text-muted-foreground flex justify-center gap-1 text-sm">
             <p>{signupText}</p>
